@@ -1,0 +1,172 @@
+.assessment-container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: linear-gradient(120deg, #fdfbfb, #ebedee);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+h1::after {
+  content: "📚 Empowering Education Together!";
+  display: block;
+  font-size: 1em;
+  color: #555;
+  margin-top: 5px;
+}
+
+.question {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000000;
+  margin-left: 70px;
+}
+
+.options label {
+  display: block;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.2s;
+  margin-left: 70px;
+}
+
+.options label:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+}
+
+.options input[type="radio"] {
+  margin-right: 20px;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.previous-button,
+.next-button,
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 70px;
+}
+
+.previous-button:hover,
+.next-button:hover,
+.submit-button:hover {
+  background-color: #388e3c;
+}
+
+.progress-bar {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #e0e0e0;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: #4caf50;
+  width: 0;
+  transition: width 0.5s ease;
+}
+
+.teacher-quote {
+  text-align: center;
+  font-size: 1em;
+  color: #777;
+  font-style: italic;
+  margin-top: 15px;
+}
+
+/* Responsive Design */
+
+/* For tablets */
+@media (max-width: 768px) {
+  .assessment-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .question {
+    font-size: 1.3em;
+  }
+
+  .options label {
+    font-size: 1em;
+  }
+
+  .previous-button,
+  .next-button,
+  .submit-button {
+    font-size: 1em;
+    padding: 10px 15px;
+  }
+
+  .navigation-buttons {
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .assessment-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .question {
+    font-size: 1.1em;
+  }
+
+  .options label {
+    font-size: 0.9em;
+  }
+
+  .previous-button,
+  .next-button,
+  .submit-button {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+
+  .navigation-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+}

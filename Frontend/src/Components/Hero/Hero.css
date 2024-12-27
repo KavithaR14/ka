@@ -1,0 +1,130 @@
+/* Hero Section */
+.hero-section {
+    background-color: #f5f5f5;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Hero Container */
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 500px;
+    padding: 30px;
+   
+  }
+  
+  @media (min-width: 768px) {
+    .hero-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Hero Text Container */
+  .hero-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-text-container {
+      text-align: left;
+    }
+  }
+  
+  .hero-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #333;
+    /* margin-bottom: 20px; */
+    margin-left: 120px;
+    margin-top:-150px ;
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-heading {
+      font-size: 3rem;
+    }
+  }
+  
+  .hero-highlight {
+    color: #6AA698;
+  }
+  
+  /* Hero Button */
+  .hero-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    margin-left: 120px;
+    width: 300px;
+    height: 50px;
+
+  }
+  
+  @media (min-width: 768px) {
+    .hero-button-container {
+      justify-content: flex-start;
+    }
+  }
+  
+  .hero-primary-btn {
+    background-color: #ff8c00;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .hero-primary-btn:hover {
+    background-color: #e67e22;
+    transform: translateY(-2px);
+  }
+  
+  .hero-arrow-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+  }
+  
+  .hero-primary-btn:hover .hero-arrow-icon {
+    transform: translateX(5px) rotate(-45deg);
+  }
+  
+  /* Hero Image */
+  .hero-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 1000px;
+  }
+  
+  .hero-image {
+    width: 200%;
+    max-width: 880px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    transition: transform 0.3s;
+    margin-top: -70px;
+  }
+  
+  .hero-image:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (min-width: 1280px) {
+    .hero-image {
+      max-width: 600px;
+    }
+  }
+  
